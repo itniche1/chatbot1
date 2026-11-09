@@ -9,6 +9,10 @@ npm run dev        # http://localhost:5173 — proxies /api to the live backend 
 npm run build      # outputs to build/ (same folder as the old Create React App build)
 ```
 
+## Deploying (Vercel)
+
+`vercel.json` builds with `npm run build` (output `build/`), serves `index.html` for every non-API path (so deep links like `/app/...` work), and **proxies `/api/*` to the existing backend at `chat-bot-omega-orpin.vercel.app`**, so the browser still talks to the API on the same origin. If the API moves, change that rewrite (or set `VITE_BACKEND_URL` and remove the rewrite).
+
 ## Compatibility with the existing backend
 
 Everything below was reverse-engineered from the live production bundle and kept identical. Do not change it without changing the backend too.
