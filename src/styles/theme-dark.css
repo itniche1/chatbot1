@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Dark theme: html[data-theme="dark"] (toggle: src/lib/theme.tsx)
+   Remaps neutral, text, border, status and brand-tint tokens. Ink bands
+   (sidebar, heroes) stay ink and get a hairline so they read on the dark canvas.
+   The embeddable widget is not affected: it uses each chatbot's own theme.
+   ========================================================================== */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Brand tints on dark */
+  --brand-ink: #F59A55;
+  --brand-50: rgba(229, 113, 25, .10);
+  --brand-100: rgba(229, 113, 25, .26);
+  --brand-glow: rgba(229, 113, 25, .34);
+  --brand-tint: rgba(229, 113, 25, .12);
+
+  /* Light end of the neutral ramp (used for subtle fills, skeletons, grids) */
+  --ink-25: #141418;
+  --ink-50: #1A1A1F;
+  --ink-100: #222228;
+  --ink-150: #2A2A31;
+  --ink-200: #35353D;
+  --ink-300: #70707A;
+
+  /* Semantic */
+  --bg: #111114;
+  --canvas: #0D0D10;
+  --surface: #17171C;
+  --bg-subtle: #1B1B21;
+  --bg-muted: #222228;
+  --text: #E4E4E8;
+  --text-strong: #FFFFFF;
+  --text-muted: #A4A4AD;
+  --text-subtle: #7F7F89;
+  --border: #26262D;
+  --border-strong: #35353D;
+
+  --nav-bg: #08080A;
+
+  --success: #4ADE80; --success-bg: rgba(34, 197, 94, .12);  --success-border: rgba(34, 197, 94, .3);
+  --warning: #FBBF24; --warning-bg: rgba(251, 191, 36, .12); --warning-border: rgba(251, 191, 36, .3);
+  --danger:  #F87171; --danger-bg:  rgba(248, 113, 113, .12); --danger-border:  rgba(248, 113, 113, .32);
+  --info:    #8AB4FF; --info-bg:    rgba(96, 145, 255, .12); --info-border:    rgba(96, 145, 255, .3);
+
+  --chart-grid: #26262D;
+
+  --sh-xs: 0 1px 2px rgba(0, 0, 0, .5);
+  --sh-1: 0 1px 2px rgba(0, 0, 0, .5), 0 8px 20px -10px rgba(0, 0, 0, .7);
+  --sh-2: 0 1px 2px rgba(0, 0, 0, .5), 0 16px 40px -12px rgba(0, 0, 0, .8);
+  --sh-3: 0 30px 60px -18px rgba(0, 0, 0, .9);
+}
+
+/* Ink bands: keep them ink, separate them from the dark canvas */
+[data-theme="dark"] .sidebar { border-right: 1px solid var(--border); }
+[data-theme="dark"] .hero-band,
+[data-theme="dark"] .help-hero,
+[data-theme="dark"] .mk-cta,
+[data-theme="dark"] .auth__panel { border: 1px solid var(--border-strong); background-color: #08080A; }
+[data-theme="dark"] .auth__panel { border-width: 0 1px 0 0; }
+
+/* Inverted "dark" elements become light so they still stand out */
+[data-theme="dark"] .btn--dark { background: #F2F2F0; color: #111; }
+[data-theme="dark"] .btn--dark:hover:not(:disabled) { background: #fff; }
+[data-theme="dark"] .badge--dark { background: #F2F2F0; color: #111; }
+[data-theme="dark"] .msg--user .msg__bubble,
+[data-theme="dark"] .tmsg--user .tmsg__bubble { background: #2B2B33; }
+[data-theme="dark"] .quick-action__icon { background: #08080A; box-shadow: inset 0 0 0 1px var(--border-strong); }
+
+/* Text set in mid-greys for light mode */
+[data-theme="dark"] .avatar { color: var(--text); }
+[data-theme="dark"] .badge--neutral { color: var(--text-muted); }
+[data-theme="dark"] .overlay { background: rgba(0, 0, 0, .6); }
+[data-theme="dark"] .select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23A4A4AD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E"); }
+
+/* Code */
+[data-theme="dark"] .md-code pre { color: #E6E6EA; }
+[data-theme="dark"] .hljs-comment, [data-theme="dark"] .hljs-quote { color: #8B8B96; }
+[data-theme="dark"] .hljs-keyword, [data-theme="dark"] .hljs-selector-tag, [data-theme="dark"] .hljs-literal { color: #FF8A65; }
+[data-theme="dark"] .hljs-string, [data-theme="dark"] .hljs-regexp, [data-theme="dark"] .hljs-addition { color: #A5D6A7; }
+[data-theme="dark"] .hljs-number, [data-theme="dark"] .hljs-attr, [data-theme="dark"] .hljs-attribute, [data-theme="dark"] .hljs-variable, [data-theme="dark"] .hljs-property { color: #90CAF9; }
+[data-theme="dark"] .hljs-title, [data-theme="dark"] .hljs-section, [data-theme="dark"] .hljs-title.function_ { color: #CE93D8; }
+[data-theme="dark"] .hljs-built_in, [data-theme="dark"] .hljs-type { color: #FFCC80; }
+[data-theme="dark"] .hljs-tag, [data-theme="dark"] .hljs-name { color: #80CBC4; }
+
+/* ---------- Theme toggle (both themes) ---------- */
+.theme-switching, .theme-switching *, .theme-switching *::before, .theme-switching *::after { transition: none !important; }
+.theme-toggle { position: relative; overflow: hidden; }
+.theme-toggle__icons { position: relative; display: grid; width: 18px; height: 18px; }
+.theme-toggle__icons svg { grid-area: 1 / 1; width: 18px; height: 18px; transition: transform var(--t-med) var(--ease-out), opacity var(--t-med); }
+/* Light mode shows the moon (switch to dark); dark mode shows the sun */
+.theme-toggle__icons[data-theme-icon="light"] svg:first-child { opacity: 0; transform: rotate(-90deg) scale(.5); }
+.theme-toggle__icons[data-theme-icon="dark"] svg:last-child { opacity: 0; transform: rotate(90deg) scale(.5); }
+.theme-toggle__icons[data-theme-icon="dark"] svg:first-child { color: var(--brand); }
+.theme-toggle--ink { color: rgba(255,255,255,.6) !important; }
+.theme-toggle--ink:hover:not(:disabled) { color: #fff !important; background: rgba(255,255,255,.08) !important; }

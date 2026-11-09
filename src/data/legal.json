@@ -1,0 +1,204 @@
+{
+  "updated": "October 8, 2026",
+  "company": "IT Niche, LLC",
+  "email": "support@itniche.com",
+  "privacy": [
+    {
+      "id": "scope",
+      "title": "Who we are and what this policy covers",
+      "paragraphs": [
+        "IT Niche, LLC operates the Chatbase chatbot platform. This Privacy Policy explains how we handle information when you visit our website, create an account, configure a chatbot, or interact with a chatbot powered by our service.",
+        "When a business embeds a chatbot on its website, that business determines how it uses information collected through its chatbot. Its privacy notice also applies. Contact that business about its handling of your conversation or lead details; contact us about our platform and account services."
+      ]
+    },
+    {
+      "id": "information",
+      "title": "Information we collect",
+      "bullets": [
+        "Account information: name, email address, authentication information, account role, verification status, and account or plan activity. Passwords are stored in hashed form.",
+        "Chatbot and knowledge information: settings, permitted domains, uploaded documents, content from websites you choose to import, extracted text, and mathematical representations of that text used to retrieve relevant information.",
+        "Conversation and lead information: questions, AI responses, conversation history, timestamps, session or visitor identifiers, and name, email, or phone details submitted through a chatbot’s lead form.",
+        "Service and technical information: usage counts, operational and security events, website/domain information, and request information needed to deliver and protect the service.",
+        "Support communications: information you choose to provide when contacting us. Please do not send passwords or unnecessary sensitive information."
+      ]
+    },
+    {
+      "id": "uses",
+      "title": "How we use information",
+      "bullets": [
+        "Provide accounts, authenticate users, and send verification or password-reset messages.",
+        "Configure and run chatbots, index knowledge, retrieve relevant content, and generate answers.",
+        "Show chatbot owners their conversations, leads, usage, and analytics.",
+        "Apply plan limits and domain restrictions, investigate errors, and help prevent abuse or unauthorized access.",
+        "Respond to support requests, meet legal obligations, and maintain the service."
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI processing and service providers",
+      "paragraphs": [
+        "Chatbase uses OpenAI’s API to generate responses and knowledge embeddings. Relevant conversation content, instructions, and knowledge excerpts may be sent to OpenAI for this processing. Do not submit content you do not have permission to share or information unnecessary for your use of the chatbot.",
+        "We use infrastructure and database services to host and store platform information. The deployed website uses Vercel hosting; the application stores account, chatbot, conversation, and lead records in a MongoDB database. Resend is used for supported email delivery features when configured. These providers process the information needed for their roles under their own terms and applicable arrangements.",
+        "Provider retention and data-use rules depend on the provider and applicable account settings. We do not promise zero retention or a particular provider storage location."
+      ],
+      "links": [
+        {
+          "label": "OpenAI API data controls",
+          "href": "https://developers.openai.com/api/docs/guides/your-data"
+        }
+      ]
+    },
+    {
+      "id": "sharing",
+      "title": "When information is shared",
+      "paragraphs": [
+        "Chatbot owners and authorized platform administrators can access information within the permissions supported by the service. When you interact with an embedded chatbot, your submitted details and conversation can be visible to the business operating that chatbot.",
+        "Information is shared with service providers as needed to operate the platform. We may also disclose information when required by law or when reasonably necessary to protect the service, enforce our terms, or protect rights and safety. If the business changes ownership, information may be transferred as part of that transaction, subject to applicable law and relevant privacy protections."
+      ]
+    },
+    {
+      "id": "storage",
+      "title": "Cookies and browser storage",
+      "paragraphs": [
+        "The application uses browser storage for login tokens and preferences, and authentication endpoints may set login or refresh cookies. Embedded chatbots may store session or visitor identifiers and theme choices so conversations and preferences can continue. The landing page also stores your light/dark theme preference.",
+        "Clearing browser storage can sign you out or reset chatbot continuity and preferences. Your browser settings control storage on your device; deleting local storage does not by itself delete information held on the platform. Websites that embed a chatbot may use their own cookies or analytics under their own notices."
+      ]
+    },
+    {
+      "id": "retention",
+      "title": "Retention and deletion",
+      "paragraphs": [
+        "Information is retained according to its purpose, account activity, chatbot configuration, operational needs, and applicable legal requirements. We do not set a single retention period for every category of information in this policy.",
+        "Workspace controls allow chatbot owners to manage knowledge files and conversations. Some conversation lifecycle behavior depends on the bot’s settings. Archiving or moving a conversation to trash is different from permanently deleting it. Deleting a knowledge file removes its associated indexed content from the active knowledge base.",
+        "For account-level deletion or requests not covered by available controls, email support@itniche.com. We may need to verify your identity and authority. Some information may need to be retained for legal obligations, security, dispute resolution, or backup handling."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "Your choices and privacy requests",
+      "paragraphs": [
+        "Depending on where you live and which laws apply, you may have rights to request access to, correction of, or deletion of personal information, or other controls over its use. Email support@itniche.com with your request. We will evaluate requests under applicable law and may verify identity before responding.",
+        "If your request concerns a chatbot operated by another business, contact that business first. We can assist with identifying the appropriate account where possible. Avoid including sensitive information beyond what is necessary to identify your request."
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security and international processing",
+      "paragraphs": [
+        "The platform uses controls such as hashed passwords, authentication, access permissions, and domain restrictions. No method of transmission or storage can guarantee complete security. Protect your credentials and report suspected unauthorized access to support@itniche.com.",
+        "We are based in the United States. Providers may process information in the United States or other countries, depending on their services and configurations. Privacy protections may differ across locations; applicable legal requirements continue to apply."
+      ]
+    },
+    {
+      "id": "children",
+      "title": "Children’s information",
+      "paragraphs": [
+        "Chatbase is a business chatbot service and is not intended for children under 13. Do not knowingly submit personal information from children under 13 through the platform without a legally appropriate arrangement. If you believe a child’s personal information has been provided improperly, contact support@itniche.com so we can investigate."
+      ]
+    },
+    {
+      "id": "changes",
+      "title": "Changes and contact",
+      "paragraphs": [
+        "We may update this policy as the service or applicable requirements change. The date above identifies the current version. Where required, we will provide additional notice of material changes.",
+        "For privacy questions or requests, contact IT Niche, LLC at support@itniche.com."
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "id": "agreement",
+      "title": "About these terms",
+      "paragraphs": [
+        "These Terms of Use govern access to the Chatbase website and chatbot platform operated by IT Niche, LLC. By creating an account or using the service, you agree to these terms. If you do not agree, do not use the service.",
+        "You must have the legal capacity to enter a binding agreement. If you use the service for a business or another organization, you represent that you are authorized to bind it. A separate written agreement with us controls if it conflicts with these terms."
+      ]
+    },
+    {
+      "id": "accounts",
+      "title": "Accounts and account security",
+      "paragraphs": [
+        "Provide accurate account information and keep your credentials secure. You are responsible for activity under your account and for people you authorize to use it. Notify support@itniche.com promptly if you suspect unauthorized access.",
+        "Use only accounts, workspaces, and chatbots you are authorized to access. Do not circumvent verification, quotas, domain restrictions, or other access controls."
+      ]
+    },
+    {
+      "id": "service",
+      "title": "The service and plans",
+      "paragraphs": [
+        "Chatbase lets users configure website chatbots, supply knowledge, generate AI responses, collect visitor details, and review conversations and usage. Features and limits depend on the plan and current service availability.",
+        "Trial access is subject to its stated duration and usage limits. Any paid access is subject to the fees, billing period, renewal, cancellation, and refund terms presented when it is purchased or otherwise agreed with us. A trial alone does not authorize a payment. Nothing in these terms limits refund or cancellation rights that cannot be waived under applicable law.",
+        "We may maintain, update, or modify the service. Availability, response speed, and suitability for a particular purpose are not guaranteed. Do not rely on the service as your sole record of important business information."
+      ]
+    },
+    {
+      "id": "content",
+      "title": "Your content and responsibilities",
+      "paragraphs": [
+        "You retain your rights in the documents, knowledge content, and other materials you provide. You grant us permission to host, store, index, transmit, and process that content as necessary to provide, secure, and maintain the service, including processing by relevant service providers.",
+        "You are responsible for having permission to upload documents, import website content, collect visitor details, and process personal information. Make appropriate disclosures to chatbot visitors and obtain consent where required. You are responsible for your chatbot’s configuration and your use of its output.",
+        "Do not submit highly sensitive information, payment-card details, passwords, or information unnecessary for the chatbot’s purpose. These terms do not establish a regulated-data processing arrangement or a certification for handling such information."
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI output and appropriate reliance",
+      "paragraphs": [
+        "AI-generated answers may be inaccurate, incomplete, outdated, or misleading, even when grounded in your knowledge base. Review important output before relying on it or sharing it. A chatbot response is not a substitute for qualified professional judgment.",
+        "Do not use the chatbot as the sole basis for decisions affecting a person’s legal rights, health, employment, access to credit, or other significant interests. You are responsible for appropriate human review and compliance with the laws relevant to your use."
+      ]
+    },
+    {
+      "id": "acceptable",
+      "title": "Acceptable use",
+      "bullets": [
+        "Do not use the service for illegal, fraudulent, deceptive, harassing, or discriminatory activity.",
+        "Do not infringe intellectual property, privacy, publicity, or other rights, or upload content you are not authorized to use.",
+        "Do not distribute malware, attempt unauthorized access, probe other users’ data, or interfere with the platform or its infrastructure.",
+        "Do not scrape or import content in a way that violates applicable law or access restrictions.",
+        "Do not collect personal information unlawfully, impersonate others, or send unsolicited communications contrary to applicable requirements.",
+        "Do not bypass usage limits, resell unauthorized access, or misrepresent the service or AI output."
+      ]
+    },
+    {
+      "id": "ownership",
+      "title": "Our rights and third-party services",
+      "paragraphs": [
+        "We and our licensors retain rights in the platform, software, design, trademarks, and other service materials, except for your own content. These terms grant permission to use the service within your authorized access and do not transfer ownership of the platform.",
+        "The platform uses third-party infrastructure, AI, database, and email services. Links to third-party sites are provided for convenience. Those services and sites have their own terms and policies; we do not control their independent operations."
+      ]
+    },
+    {
+      "id": "suspension",
+      "title": "Suspension and termination",
+      "paragraphs": [
+        "We may restrict or suspend access when reasonably necessary to address misuse, security risks, legal requirements, nonpayment of agreed fees, or violations of these terms. Where practical and legally permitted, we will communicate the reason and available next steps.",
+        "You may stop using the service and contact support@itniche.com about account closure or an applicable cancellation request. Export information you need before closing your account where your plan supports exports. Account closure and data deletion remain subject to applicable legal requirements and the Privacy Policy."
+      ]
+    },
+    {
+      "id": "disclaimers",
+      "title": "Disclaimers and limits",
+      "paragraphs": [
+        "To the extent permitted by applicable law, the service is provided on an “as is” and “as available” basis, without warranties of uninterrupted availability, error-free operation, or fitness for a particular purpose. We do not guarantee chatbot accuracy, lead generation, revenue, or a particular business result.",
+        "To the extent permitted by law, IT Niche, LLC is not responsible for indirect, incidental, special, or consequential losses arising from use of the service. Nothing in these terms excludes or limits liability or statutory protections that cannot legally be excluded or limited."
+      ]
+    },
+    {
+      "id": "law",
+      "title": "Governing law and disputes",
+      "paragraphs": [
+        "These terms are governed by the laws of Tennessee, United States, without regard to conflict-of-laws rules, except where mandatory laws require otherwise. Mandatory consumer protections and rights available under applicable law remain unaffected.",
+        "Contact support@itniche.com first so we can try to resolve a dispute. If a dispute cannot be resolved informally, the parties may pursue remedies available under applicable law. These terms do not impose mandatory arbitration or waive nonwaivable rights."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "Updates and contact",
+      "paragraphs": [
+        "We may update these terms as the service or applicable requirements change. The date above identifies the current version. We will provide notice or seek agreement where required by law. If you do not accept an update, stop using the service and contact us about your account.",
+        "Questions about these terms can be sent to IT Niche, LLC at support@itniche.com."
+      ]
+    }
+  ]
+}
