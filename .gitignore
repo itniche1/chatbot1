@@ -3,3 +3,7 @@ build
 .env.local
 *.log
 tsconfig.tsbuildinfo
+
+.vercel
+.env*
+!.env.example
