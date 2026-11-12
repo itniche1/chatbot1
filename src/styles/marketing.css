@@ -79,7 +79,7 @@
 .mk-bento__art svg { width: 100%; height: 100%; max-width: 480px; overflow: visible; }
 .mk-bento__card:not(.is-wide) .mk-bento__art svg { max-width: 320px; }
 .mk-bento__text { padding: 20px 24px 24px; }
-.mk-bento__kicker { font-size: 10px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: var(--brand-ink); }
+.mk-bento__kicker { font-size: 11.5px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: var(--brand-ink); }
 .mk-bento__text h3 { font-size: var(--fs-lg); margin-top: 6px; }
 .mk-bento__text p { margin-top: 8px; color: var(--text-muted); font-size: .9375rem; line-height: 1.65; }
 .mk-bento__card--extras { background: radial-gradient(ellipse 80% 60% at 100% 0%, rgba(229, 113, 25, .3), transparent 60%), #0B0B0D; border-color: #0B0B0D; color: rgba(255, 255, 255, .72); }
