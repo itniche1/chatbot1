@@ -1,14 +1,14 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
-  ArrowRight, ShieldCheck, Mic, Check, CheckCircle2, ArrowUp, Clock, Lock, Download,
+  ArrowRight, ShieldCheck, Mic, Check, CheckCircle2, Clock, Lock, Download,
 } from "lucide-react";
 import { useApi } from "../../lib/useApi";
 import { fmtNumber } from "../../lib/format";
 import type { Plan } from "../../lib/types";
-import { AiAvatar } from "../../components/brand/Logo";
 import { MarketingFooter, MarketingHeader } from "../../components/marketing/Chrome";
 import { RobotMascot } from "../../components/marketing/RobotMascot";
+import { HeroDemo } from "../../components/marketing/HeroDemo";
 import { CreateScene, EngageScene, TeachScene } from "../../components/marketing/JourneyArt";
 import { AnalyticsArt, BrandArt, HandoffArt, KnowledgeArt, LeadArt, VoiceArt } from "../../components/marketing/FeatureArt";
 
@@ -69,7 +69,7 @@ export default function Landing() {
                 <span><Mic />Voice input</span>
               </div>
             </div>
-            <ProductMock />
+            <HeroDemo />
           </div>
         </section>
 
@@ -179,25 +179,6 @@ export default function Landing() {
         </section>
       </main>
       <MarketingFooter />
-    </div>
-  );
-}
-
-function ProductMock() {
-  return (
-    <div className="mk-mock" aria-label="Example conversation" role="img">
-      <div className="mk-mock__win">
-        <div className="mk-mock__chrome" aria-hidden><i /><i /><i /></div>
-        <div className="mk-mock__head"><AiAvatar /><div><strong style={{ fontSize: 14 }}>IT Niche Assistant</strong><small>Online · usually replies instantly</small></div></div>
-        <div className="mk-mock__body">
-          <div className="mk-bubble mk-bubble--bot">Hi! 👋 I can help you plan a new website, marketing or custom software. What are you working on?</div>
-          <div className="mk-bubble mk-bubble--user">We need a new e-commerce site. What would that involve?</div>
-          <div className="mk-bubble mk-bubble--bot">Great choice. A typical project covers <strong>discovery, design, build and launch</strong>. Want me to have a specialist send you a tailored proposal?</div>
-          <div className="mk-lead-card"><CheckCircle2 /><span><strong>New lead captured</strong> · ready for follow-up</span></div>
-        </div>
-        <div className="mk-mock__input"><span>Ask anything...</span><span className="mk-mock__send"><ArrowUp /></span></div>
-      </div>
-      <div className="mk-mock__caption">Illustrative example</div>
     </div>
   );
 }
