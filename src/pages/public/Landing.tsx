@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight, ShieldCheck, Mic, Check, CheckCircle2, Clock, Lock, Download,
@@ -164,7 +164,7 @@ export default function Landing() {
         <section className="mk-section mk-section--tint">
           <div className="mk-container">
             <div className="mk-head"><div className="eyebrow">Questions</div><h2 style={{ marginTop: 10 }}>Frequently asked</h2></div>
-            <div className="mk-faq">{FAQ.map((f) => <details key={f.q}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div>
+            <FaqList items={FAQ} />
           </div>
         </section>
 
@@ -219,4 +219,32 @@ function InView({ className, children, item = ".mk-bento__card" }: { className: 
     return () => io.disconnect();
   }, [item]);
   return <div ref={ref} className={className}>{children}</div>;
+}
+
+/** Animated FAQ accordion: one answer open at a time; answers slide open/closed (native <details> can't animate). */
+function FaqList({ items }: { items: { q: string; a: string }[] }) {
+  const [open, setOpen] = useState<number | null>(null);
+  const base = useId();
+  const toggle = (i: number) => setOpen((prev) => (prev === i ? null : i)); // opening one closes the other
+  return (
+    <div className="mk-faq">
+      {items.map((f, i) => {
+        const isOpen = open === i;
+        const btn = `${base}-q${i}`, panel = `${base}-a${i}`;
+        return (
+          <div key={f.q} className={`mk-faq__item ${isOpen ? "is-open" : ""}`}>
+            <h3 className="mk-faq__q">
+              <button type="button" id={btn} aria-expanded={isOpen} aria-controls={panel} onClick={() => toggle(i)}>
+                <span>{f.q}</span>
+                <span className="mk-faq__icon" aria-hidden />
+              </button>
+            </h3>
+            <div id={panel} role="region" aria-labelledby={btn} className="mk-faq__panel" inert={!isOpen}>
+              <div className="mk-faq__inner"><p>{f.a}</p></div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
